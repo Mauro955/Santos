@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    body{
+        background-image: linear-gradient(180deg,rgb(211, 211, 241),rgb(0, 0, 0));
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 50px;
+    color: rgb(5, 5, 73);
+    display: inline-block;
+}
+div{
+    margin-top: 30vh;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 7px 9px 0px wheat;
+    margin-left: 30px;
+    color: rgb(5, 5, 73);
+    background-color: white/2;
+}
+h3{
+    margin-bottom: 0px;
+    letter-spacing: 9px;
+}
+p{
+    margin-top: 0px;
+}
+.i{
+    display: none;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 10px;
+}
+div:hover .i{
+    display: block;
+}
+.au:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+    height: 200px;
+    width: auto;
+    background-image: linear-gradient(180deg,rgb(211, 211, 241),rgb(0, 0, 0));
+    color: blue;
+    box-shadow: 0px 4px 7px 0px wheat;
+}
+.o{
+    display: inline-block;
+    position: relative;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    color: blue;
+    position: absolute;
+}
+a:hover{
+border-top: 2px solid rgb(7, 7, 73);
+background-color: white;
+border-radius: 4px;
+}
+.o:hover a{
+    display: inline-block;
+}
+input:hover{
+    border: 3px solid  rgb(131, 182, 228);
+    border-radius: 10px;
+}
+</style>
+<body>
+    <h1 style="position: absolute;top: 30px;">Negócio Pub</h1>
+    <nav class="o">
+        <img src="img/menu-burger.png" height="30px" alt="Link">
+        <br><br>
+    <a href="#">Sobre_Nós</a>
+    <br><br>
+    <a href="#">Serviços</a>
+    <br><br>
+    <a href="#">Termos</a>
+    </nav>
+    <div>
+    <h3>Olá Seja muito bem vindo ao nosso site</h3>
+    <h1>Negócio Pub</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea expedita quia necessitatibus itaque, deleniti placeat enim officia at. Ab ullam voluptatem iste in harum expedita quam aut maxime debitis quaerat?</p>
+    <br>
+    <nav class="i">
+        <form action="" id="usardados">
+        <h2 style="font-size: 30px;">Login</h2>
+        <label for="Nome">Nome</label>
+        <input id="Nome" type="text" placeholder="Digite O seu Nome:" required>
+        <br><br>
+        <label for="Senha">Senha</label>
+        <input id="Senha" type="password" placeholder="Digite a sua Senha:" required>
+        <br><br>
+        <button class="au" onclick="login()">Entrar</button>
+    </form>
+    </nav>
+    </div>
+    <br><br><br>
+    <footer>
+        <br>
+        <h4 style="font-size: 30px;">Negócio Pub</h4>
+        <br><br>
+        <p style="text-align: center; color: white;">Com a participaçcão de HTML,CSS.</p>
+    </footer>
+    <script src="js.js">
+    </script>
+</body>
+</html>
